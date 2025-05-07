@@ -15,19 +15,23 @@ import appointmentRoutes from "./router/appointmentRouter.js";
 const app = express();
 config({path: ".env"});
 
-
-app.use(cors({
-    origin: function (origin, callback) {
-        const allowedOrigins = [process.env.FRONTEND_URL, process.env.FRONTEND_URL1];
+const allowedOrigins = [
+    "https://dashboard1-psi-nine.vercel.app/"
+  ];
+  
+  app.use(
+    cors({
+      origin: function (origin, callback) {
         if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
+          callback(null, true);
         } else {
-            callback(new Error("Not allowed by CORS"));
+          callback(new Error("Not allowed by CORS"));
         }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"]
-}));
+      },
+      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      credentials: true,
+    })
+  );
 
 
 app.use(fileUpload({
