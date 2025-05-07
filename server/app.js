@@ -16,7 +16,7 @@ const app = express();
 config({path: ".env"});
 
 const allowedOrigins = [
-    "https://dashboard1-psi-nine.vercel.app/"
+    "https://dashboard1-psi-nine.vercel.app"
   ];
   
   app.use(
