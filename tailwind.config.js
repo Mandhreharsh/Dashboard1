@@ -1,3 +1,5 @@
+const { indigo } = require('@mui/material/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,6 +18,8 @@ module.exports = {
                         bgfooter: "url('images/footerbg.jpg')",
                         bgdumbell: "url('images/dumbell.png')",
                         bgdumbell1: "url('images/dumbell1.jpg')",
+                        // dashboardbg: "url('images/bgdashboard.png')"
+                        dashboardbg: "url('images/dashboardbg2.png')"
                       },
       fontFamily: {
       mullish: ["Mulish", "sans-serif"],
@@ -34,10 +38,13 @@ module.exports = {
       violet50: "#CD9BFF",
       violet500: "#D0D2FF",
       lightBlue500: "#9BB3FB",
-      violet100: "#E2DFFF",
-      yellow500: "#F4AF00",
-      black500: "#12100",
-      black700: "#3d3d3d",
+      Blue100: "#70E1FF",
+      indigo: "#B5B7FF",
+      violet10: "#CED4FF",
+      blue10: "#344CFF",
+      black10: "#ADADAD",
+      dashboardviolet: "#F9F1FF",
+
     },
   },
   },

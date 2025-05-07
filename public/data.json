@@ -1,0 +1,61 @@
+{
+    "doctors": [
+      {
+        "id": "1",
+        "image" : "assets/doctor1.png",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "Department" : "Neurologist"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor2.png",
+        "name": "Emily Carter",
+        "email": "Carter@example.com",
+        "Department" : "Pediatrician"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor3.png",
+        "name": "Daniel Smith",
+        "email": "smith@example.com",
+        "Department" : "Cardiologist"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor1.png",
+        "name": "Sophia Lee",
+        "email": "sophia@example.com",
+        "Department" : "Dermatologist"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor3.png",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "Department" : "Gynecologist"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor2.png",
+        "name": "James Brown",
+        "email": "james@example.com",
+        "Department" : "Orthopedic"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor1.png",
+        "name": "Olivia Taylor",
+        "email": "Olivia@example.com",
+        "Department" : "Cardiologist"
+      },
+      {
+        "id": "1",
+        "image" : "assets/doctor3.png",
+        "name": "William Davis",
+        "email": "davis@example.com",
+        "Department" : "Neurologist"
+      }
+    ]
+  }
+  

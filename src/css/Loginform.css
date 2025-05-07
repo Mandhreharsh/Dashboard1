@@ -1,0 +1,95 @@
+.loginform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .loginform {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .loginform-title {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Caladea', serif;
+    color: #333;
+  }
+  
+  .loginform-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .loginform-field label {
+    font-size: 16px;
+  }
+  
+  .loginform-input {
+    height: 35px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: linear-gradient(to right, #E3D3FF, #ECDEFF);
+    opacity: 0.9;
+  }
+  
+  .loginform-button {
+    height: 40px;
+    width: 120px;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    background-color: #D2B3FE;
+    box-shadow: 0 3px 17px #D2B3FE;
+  }
+  
+  .loginform-button:hover {
+    opacity: 0.9;
+  }
+  
+  .loginform-footer {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+  }
+  
+  .loginform-link {
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+    font-family: 'Caladea', serif;
+    color: #5b3cc4;
+  }
+  
+  @media (max-width: 600px) {
+    .loginform {
+      padding: 20px;
+    }
+  
+    .loginform-title {
+      font-size: 24px;
+    }
+  
+    .loginform-input {
+      font-size: 14px;
+    }
+  
+    .loginform-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

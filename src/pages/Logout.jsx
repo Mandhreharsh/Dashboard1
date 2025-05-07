@@ -1,27 +1,45 @@
-import React from "react"
-import LogoutIcon from "../images/logoutIcon.png"
+import React from "react";
+import LogoutIcon from "../images/logoutIcon.png";
+import "../css/Logout.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-const Logout = () => {
-    return (
-        <div className=" bg-main4 w-full h-screen flex justify-center items-center">
-            <div className="bg-main3 rounded-xl shadow-xl w-[470px] h-[370px] flex flex-col justify-center items-center gap-[50px]">
-                <div className="gap-4  flex flex-col justify-center items-center">
-                    <div className="bg-lightBlue200 w-[100px] h-[100px] rounded-full flex items-center justify-center">
-                        <img className="h-[40px] w-[40px]" src={LogoutIcon} alt="" />
-                    </div>
+const Logout = ({ setIsLoggedIn }) => {
+  const navigate = useNavigate();
 
-                    <h1 className="font-bold text-4xl">Logout</h1>
+  const handleCancel = () => {
+    navigate(-1);
+  };
 
-                    <h2 className="text-xl">Are you sure you want to logout?</h2>
-                </div>
+  const handleLogout = async () => {
+    try {
+      await axios.get('http://localhost:5000/api/auth/logout', { withCredentials: true });
+      setIsLoggedIn(false);
+      navigate('/login');
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
+  };
 
-                <div className="flex flex-row gap-6">
-                    <button className="bg-bla h-[50px] w-[150px] rounded-[10px] font-bold text-[17px] text-violet50">Cancel</button>
-                    <button  className="bg-violet50 text-white h-[50px] w-[150px] rounded-[10px] font-bold text-[17px]">Logout</button>
-                </div>
-            </div>
+  return (
+    <div className="logout-container">
+      <div className="logout-box">
+        <div className="logout-content">
+          <div className="logout-icon-wrapper">
+            <img className="logout-icon" src={LogoutIcon} alt="Logout Icon" />
+          </div>
+
+          <h1 className="logout-title">Logout</h1>
+          <h2 className="logout-subtitle">Are you sure you want to logout?</h2>
         </div>
-    )
-}
+
+        <div className="logout-buttons">
+          <button className="cancel-button" onClick={handleCancel}>Cancel</button>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Logout;

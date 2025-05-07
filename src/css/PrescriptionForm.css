@@ -1,0 +1,602 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 1500px) {
+    .container-header{
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 150%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container-header-img{
+        margin-left: 45px;
+       }
+      
+        .container{
+            width: 95%;
+            margin-left: 45px;
+        }
+        .input-box1{
+           width: auto;
+        }
+        .input1{
+           width: 550px;
+        }
+        .input2{
+           width: 550px;
+        }
+        .input-box2{
+           width: auto;
+        }
+        .input3{
+           width: 360px;
+        }
+        .input4{
+           width: 360px;
+        }
+        .input5{
+           width: 360px;
+        }
+        .input6{
+           width: 970px;
+        }
+        .input-box4{
+           width: auto;
+        }
+        .input7{
+           width: 350px;
+        }
+        .input8{
+           width: 350px;
+        }
+        .input9{
+           width: 350px;
+        }
+      
+}
+
+@media (max-width: 1400px) {
+
+    .container-header{
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 150%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        /* max-width: 800px; */
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container-header-img{
+        margin-left: 45px;
+       }
+      
+        .container{
+            width: 95%;
+            margin-left: 45px;
+        }
+        .input-box1{
+           width: auto;
+        }
+        .input1{
+           width: 450px;
+        }
+        .input2{
+           width: 450px;
+        }
+        .input-box2{
+           width: auto;
+        }
+        .input3{
+           width: 250px;
+        }
+        .input4{
+           width: 250px;
+        }
+        .input5{
+           width: 350px;
+        }
+        .input6{
+           width: 970px;
+        }
+        .input-box4{
+           width: auto;
+        }
+        .input7{
+           width: 300px;
+        }
+        .input8{
+           width: 300px;
+        }
+        .input9{
+           width: 300px;
+        }
+}
+
+
+
+@media (max-width: 1200px){
+    .container-header{
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 150%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container-header-img{
+        margin-left: 45px;
+       }
+      
+        .container{
+            width: 95%;
+            margin-left: 45px;
+        }
+        .input-box1{
+           width: auto;
+        }
+        .input1{
+           width: 450px;
+        }
+        .input2{
+           width: 450px;
+        }
+        .input-box2{
+           width: auto;
+        }
+        .input3{
+           width: 270px;
+        }
+        .input4{
+           width: 270px;
+        }
+        .input5{
+           width: 270px;
+        }
+        .input6{
+           width: 970px;
+        }
+        .input-box4{
+           width: auto;
+        }
+        .input7{
+           width: 300px;
+        }
+        .input8{
+           width: 300px;
+        }
+        .input9{
+           width: 300px;
+        }
+    }
+   
+
+
+@media (max-width: 1023px) {
+     .container-header{
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 150%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .input-box1{
+        width: auto;
+     }
+     .input1{
+        width: 500px;
+     }
+     .input2{
+        width: 500px;
+     }
+     .input-box2{
+        width: auto;
+     }
+     .input3{
+        width: 500px;
+     }
+     .input4{
+        width: 500px;
+     }
+     .input5{
+        width: 500px;
+     }
+     .input6{
+        max-width: 500px;
+    }
+     .input-box4{
+        width: auto;
+     }
+     .input7{
+        width: 500px;
+     }
+     .input8{
+        width: 500px;
+     }
+     .input9{
+        width: 500px;
+     }
+ }
+
+
+ @media (max-width: 767px){
+    .container-header{
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 150%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .input-box1{
+        width: auto;
+     }
+     .input1{
+        width: 500px;
+     }
+     .input2{
+        width: 500px;
+     }
+     .input-box2{
+        width: auto;
+     }
+     .input3{
+        width: 500px;
+     }
+     .input4{
+        width: 500px;
+     }
+     .input5{
+        width: 500px;
+     }
+     .input6{
+        max-width: 500px;
+    }
+     .input-box4{
+        width: auto;
+     }
+     .input7{
+        width: 500px;
+     }
+     .input8{
+        width: 500px;
+     }
+     .input9{
+        width: 500px;
+     }
+}
+
+
+@media (max-width: 620px) {
+    .container-header{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 150;
+        height: auto;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+    .input-box1{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .input1{
+        max-width: 300px;
+    }
+    .input2{
+        max-width: 300px;
+        /* width: 300%; */
+    }
+
+    .input-box2{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .input3{
+        max-width: 300px;
+    }
+    .input4{
+        max-width: 300px;
+    }
+    .input5{
+        max-width: 300px;
+    }
+    .input6{
+        max-width: 300px;
+    }
+
+    .input-box4{
+        width: auto;
+    } 
+    .input7{
+        max-width: 300px;
+    }
+    .input8{
+        max-width: 300px;
+    }
+    .input9{
+        max-width: 300px;
+    }
+     
+}
+
+@media (max-width: 400px) {
+    .container-header{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .container-header-img {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: auto;
+        height: auto;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+    .input-box1{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .input1{
+        max-width: 300px;
+    }
+    .input2{
+        max-width: 300px;
+        /* width: 300%; */
+    }
+
+    .input-box2{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .input3{
+        max-width: 300px;
+    }
+    .input4{
+        max-width: 300px;
+    }
+    .input5{
+        max-width: 300px;
+    }
+    .input6{
+        max-width: 300px;
+    }
+
+    .input-box4{
+        width: auto;
+    } 
+    .input7{
+        max-width: 300px;
+    }
+    .input8{
+        max-width: 300px;
+    }
+    .input9{
+        max-width: 300px;
+    }
+  
+}

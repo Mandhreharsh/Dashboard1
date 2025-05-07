@@ -1,0 +1,109 @@
+.doctors-container {
+    background-image: url("../images/bgmain2.png");
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px 16px;
+    overflow-y: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+  
+  .doctors-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .doctors-container {
+      padding: 24px 40px;
+    }
+  }
+  
+  .doctors-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+     }
+  
+  .staff-icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .staff-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 640px) {
+    .doctors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .doctors-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .doctors-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 800px){
+    .doctors-header{
+        margin-top: 30px;
+  }
+  }
+  
+  .doctor-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+  }
+  
+  .doctor-avatar {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  
+  .doctor-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .doctor-email {
+    font-size: 14px;
+    color: #4b5563;
+  }
+  
+  .doctor-department {
+    margin-top: 12px;
+    padding: 4px 12px;
+    background-color: #ede9fe;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 999px;
+  }
+  
