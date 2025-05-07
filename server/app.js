@@ -52,6 +52,12 @@ app.use("/api/v1/prescriptions", prescriptionRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/v1/appointment", appointmentRoutes);
 
+
+
+app.get("/", (req, res) => {
+    res.send("Server is running...");
+  });
+
 app.use(errorMiddleware);
 
 export default app;
