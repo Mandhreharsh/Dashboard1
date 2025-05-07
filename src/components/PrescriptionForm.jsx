@@ -38,7 +38,7 @@ const PrescriptionForm = () => {
     };
 
     try {
-      await axios.post("http://localhost:7000/api/prescriptions", data);
+      await axios.post("https://dashboard1-yhmt.onrender.com/api/prescriptions", data);
       alert("Prescription saved successfully!");
     } catch (error) {
       console.error("Error saving prescription:", error);
@@ -76,7 +76,7 @@ const PrescriptionForm = () => {
 
       document.body.removeChild(tempDiv);
 
-      const response = await axios.post("http://localhost:7000/api/prescriptions/send", {
+      const response = await axios.post("https://dashboard1-yhmt.onrender.com/api/prescriptions/send", {
         patientName,
         dateOfBirth,
         address,

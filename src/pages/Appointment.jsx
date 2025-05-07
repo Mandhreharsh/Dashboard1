@@ -16,7 +16,7 @@ const Appointment = () => {
   const fetchAppointments = async () => {
     setIsLoading(true);
     try {
-      const { data } = await axios.get("http://localhost:7000/api/v1/appointment/getall", { withCredentials: true });
+      const { data } = await axios.get("https://dashboard1-yhmt.onrender.com/api/v1/appointment/getall", { withCredentials: true });
       setAppointments(data.appointments);
     } catch (error) {
       console.error("Error fetching appointments:", error);
@@ -41,7 +41,7 @@ const Appointment = () => {
     const appointmentDate = selectedAppointment.appointment_date;
 
     try {
-      await axios.post("http://localhost:7000/api/v1/appointment/send-email", {
+      await axios.post("https://dashboard1-yhmt.onrender.com/api/v1/appointment/send-email", {
         email: selectedAppointment.email,
         firstName: selectedAppointment.firstName,
         lastName: selectedAppointment.lastName,
@@ -65,7 +65,7 @@ const Appointment = () => {
     if (!selectedAppointment) return;
 
     try {
-      await axios.delete(`http://localhost:7000/api/v1/appointment/delete/${selectedAppointment._id}`, {
+      await axios.delete(`https://dashboard1-yhmt.onrender.com/api/v1/appointment/delete/${selectedAppointment._id}`, {
         withCredentials: true
       });
 
@@ -73,7 +73,7 @@ const Appointment = () => {
       alert("Appointment cancelled successfully!");
 
       try {
-        await axios.post("http://localhost:7000/api/v1/appointment/send-email", {
+        await axios.post("https://dashboard1-yhmt.onrender.com/api/v1/appointment/send-email", {
           email: selectedAppointment.email,
           firstName: selectedAppointment.firstName,
           lastName: selectedAppointment.lastName,

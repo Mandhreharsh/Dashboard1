@@ -9,7 +9,7 @@ const Messages = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const { data } = await axios.get("http://localhost:7000/api/v1/message/getall", { withCredentials: true });
+        const { data } = await axios.get("https://dashboard1-yhmt.onrender.com/api/v1/message/getall", { withCredentials: true });
         setMessages(data.messages);
       } catch (error) {
         console.log("ERROR OCCURRED WHILE FETCHING MESSAGES:", error);

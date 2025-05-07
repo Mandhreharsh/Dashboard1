@@ -13,7 +13,7 @@ const Logout = ({ setIsLoggedIn }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.get('http://localhost:5000/api/auth/logout', { withCredentials: true });
+      await axios.get('https://dashboard1-yhmt.onrender.com/api/auth/logout', { withCredentials: true });
       setIsLoggedIn(false);
       navigate('/login');
     } catch (error) {

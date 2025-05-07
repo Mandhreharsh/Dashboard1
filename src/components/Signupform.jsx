@@ -29,7 +29,7 @@ const Signupform = ({ setIsLoggedIn }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/auth/signup",
+        "https://dashboard1-yhmt.onrender.com/api/auth/signup",
         {
           name: formData.name,
           email: formData.email,

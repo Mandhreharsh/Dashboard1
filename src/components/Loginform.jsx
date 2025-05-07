@@ -31,7 +31,7 @@ const Loginform = ({ setIsLoggedIn }) => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/auth/login",
+        "https://dashboard1-yhmt.onrender.com/api/auth/login",
         {
           email: formData.email,
           password: formData.password

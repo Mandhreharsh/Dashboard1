@@ -4,7 +4,7 @@ import { FaFilePdf, FaEnvelope, FaUser, FaCalendarAlt, FaTrash, FaCheckSquare, F
 import prescriptionIcon from "../images/prescriptionIcon.png";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:7000/api",
+  baseURL: "https://dashboard1-yhmt.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
